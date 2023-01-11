@@ -1,0 +1,16 @@
+.home-title {
+    margin-bottom: 30px;
+
+}
+
+.home-title h1 {
+    font-size: 48px;
+
+}
+
+.home-title h4 {
+    font-size: 24px;
+    color: var(--color-font-secondary);
+    font-weight: 400;
+
+}
