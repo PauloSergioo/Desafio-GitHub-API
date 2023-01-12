@@ -6,6 +6,6 @@ type Props = {
 
 export default function Button({name}: Props) {
   return (
-      <div className="button">{name}</div>
+      <button type="submit" className="button">{name}</button>
   );
 }
