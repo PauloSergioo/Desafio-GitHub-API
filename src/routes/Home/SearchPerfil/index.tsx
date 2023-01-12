@@ -1,11 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Search from "../../../components/Search";
 
-export default function Products() {
+export default function SearchPerfil() {
   return (
     <>
-      <Search />
-      <Outlet/>
+      <main>
+        <section>
+          <Search />
+          <Outlet />
+        </section>
+      </main>
     </>
   );
 }
