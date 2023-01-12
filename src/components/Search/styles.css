@@ -30,3 +30,13 @@
 .search-form ::placeholder {
     color: var(--color-placeholder);
 }
+
+.info-error {
+    font-size: 38px;
+    margin-top: 65px;
+    font-weight: 700;
+}
+
+#search-section {
+    margin-bottom: 55px;
+}

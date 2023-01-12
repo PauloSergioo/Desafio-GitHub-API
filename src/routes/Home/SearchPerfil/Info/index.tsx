@@ -1,7 +1,13 @@
 import ProfileCard from "../../../../components/ProfileCard";
+import { profileDTO } from "../../../../models/data";
 
-export default function Info() {
+type Props = {
+  profile: profileDTO;
+};
+
+export default function Info({ profile }: Props) {
   return (
-      <ProfileCard />
+      <ProfileCard profile={profile} />
+
   );
 }

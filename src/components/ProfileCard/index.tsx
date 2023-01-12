@@ -1,31 +1,35 @@
 import "./styles.css";
-import perfilImg from "../../assets/perfil.jpg";
+import { profileDTO } from "../../models/data";
 
-export default function ProfileCard() {
+type Props = {
+  profile: profileDTO;
+};
+
+export default function ProfileCard({ profile }: Props) {
   return (
     <div className="card-info container">
       <div>
-        <img src={perfilImg} alt="perfilImg" />
+        <img src={profile.avatar_url} alt="perfilImg" />
       </div>
       <div className="info-container">
         <div className="info-title">
           <h4>Informações</h4>
         </div>
-        <div className="info-block">
-          <p>Perfil:</p>
-          <p>{}</p>
+        <div className="info-block info-perfil">
+          <h6>Perfil:</h6>
+          <p>{profile.url}</p>
         </div>
         <div className="info-block">
-          <p>Seguidores:</p>
-          <p>{}</p>
+          <h6>Seguidores:</h6>
+          <p>{profile.followers}</p>
         </div>
         <div className="info-block">
-          <p>Localidade:</p>
-          <p>{}</p>
+          <h6>Localidade:</h6>
+          <p>{profile.location}</p>
         </div>
         <div className="info-block">
-          <p>Nome:</p>
-          <p>{}</p>
+          <h6>Nome:</h6>
+          <p>{profile.name}</p>
         </div>
       </div>
     </div>
